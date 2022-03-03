@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/caronc2000.lwc-l0b9kv97-fork-l0b9va0c",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 1QCn58lSH7YAHGbwWwpg --open"
+  }
+}

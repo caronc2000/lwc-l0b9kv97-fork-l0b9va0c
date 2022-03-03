@@ -1,0 +1,31 @@
+<template>
+	<div class="slds-p-vertical_x-small container">
+		<div class="grpHeading">
+			<div class="slds-grid">
+				<div class="slds-col slds-size_1-of-12">
+					<template if:true={isRequired}>
+						<abbr class="slds-required slds-float_right" title="required">
+                        </abbr>
+					</template>
+				</div>
+				<div class="slds-col">
+					{groupLabel}
+					<div class="slds-p-top_x-small">
+						<lightning-layout horizontal-align="left">
+							<lightning-layout-item size="5">
+								<lightning-input type="radio" class="radioButton" name={groupName} label="Yes" checked={isYes}
+									onchange={handleChange}>
+								</lightning-input>
+							</lightning-layout-item>
+							<lightning-layout-item size="5">
+								<lightning-input type="radio" class="radioClass" name={groupName} label="No" checked={isNo}
+									onchange={handleChange}>
+								</lightning-input>
+							</lightning-layout-item>
+						</lightning-layout>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
